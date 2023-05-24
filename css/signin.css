@@ -45,7 +45,7 @@
     padding: 5% 0%;
 }
 .sigin_pic{
-    background-image: url(/flowerpic/login_pic.jpg);
+    background-image: url(../flowerpic/login_pic.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     height: 100vh;
