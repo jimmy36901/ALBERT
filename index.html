@@ -169,39 +169,40 @@
 
 <footer class="footer_bannerwrap">
     <div class="footer_wrap">
-        <div class="footer_item">
-            <div class="brandstory">
-                <p class="brandstory_title">Brand story</p>
-                <p class="brandstory_content">Our story began with an inspiration when we discovered that some people dry and preserve</p><br>
-                <p class="brandstory_content">their favorite fresh flowers so that they can admire them for a long time. </p>
-            </div>
-        </div>
-        <div class="footer_item">
-            <div class="footer_aboutus">
-                <p class="title">About</p>
-                <nav>
-                    <li><a href="#" class="foot_about_info">Flora product</a></li>
-                    <li><a href="#" class="foot_about_info">National delivery</a></li>
-                    <li><a href="#" class="foot_about_info">FAQ</a></li>
-                </nav>
-            </div>
-        </div>
-        <div class="footer_item">
-            <div class="footer_business">
-                <p class="business_title">Business hours</p>
-                <p class="business_info">Time: </p>
-                <p class="business_content">Monday-Friday / 10AM-07PM </p>
-                <p class="business_info">Tel:</p>
-                <p class="business_content">+886 982459364</p>
-                <p class="business_info">Email:</p>
-                <p class="business_content">Fluer10_07@iCloud.com</p>
-                <div class="footer_icon">
-                    <a href="#" class="ins"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="fb"><i class="fa-brands fa-facebook"></i></a>
+            <div class="footer_item">
+                <div class="brandstory">
+                    <p class="brandstory_title">Brand story</p>
+                    <p class="brandstory_content">Our story began with an inspiration when we discovered that some people dry and preserve</p><br>
+                    <p class="brandstory_content">their favorite fresh flowers so that they can admire them for a long time. </p>
                 </div>
             </div>
-        </div>
+            <div class="footer_item">
+                <div class="footer_aboutus">
+                    <p class="title">About</p>
+                    <nav>
+                        <li><a href="#" class="foot_about_info">Flora product</a></li>
+                        <li><a href="#" class="foot_about_info">National delivery</a></li>
+                        <li><a href="#" class="foot_about_info">FAQ</a></li>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer_item">
+                <div class="footer_business">
+                    <p class="business_title">Business hours</p>
+                    <p class="business_info">Time: </p>
+                    <p class="business_content">Monday-Friday / 10AM-07PM </p>
+                    <p class="business_info">Tel:</p>
+                    <p class="business_content">+886 982459364</p>
+                    <p class="business_info">Email:</p>
+                    <p class="business_content">Fluer10_07@iCloud.com</p>
+                    <div class="footer_icon">
+                        <a href="#" class="ins"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="fb"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
     </div>
+    <div class="topbutton" onclick="scrollToTop()"><i class="fa-sharp fa-solid fa-arrow-up"></i></div>
 
 </footer>
 
@@ -243,6 +244,15 @@
           $('.stop').on('click',function(){
               owl.trigger('stop.owl.autoplay')
           })
+          </script>
+
+          <script>
+            function scrollToTop(){
+                window.scrollTo({
+                    top:0,
+                    behavior:"smooth"
+                })
+            }
           </script>
 </body>
 </html>

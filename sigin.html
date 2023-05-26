@@ -50,12 +50,9 @@
                         <label class="username"><input class="typing " type="text" placeholder="Username"></label>
                         <label class="account"><input class="typing " type="text" placeholder="Account"></label>
                         <label class="password"><input class="typing " type="text" placeholder="Password"></label>
-                        <label class="E-mail"><input class="typing " type="text" placeholder="E-mail"></label>
-                            <div class="sigin_rightarrow_wrap">
-                                <div class="sigin_rightarrow">
-                                    <button><i class="fa-sharp fa-solid fa-circle-right" style="color: #000000;"></i></button>
-                                </div>
-                            </div>
+                        <label class="E-mail"><input class="typing" type="text" placeholder="E-mail">
+                            <i class="fa-sharp fa-solid fa-circle-right" style="color: #000000;"></i>
+                        </label>
                         <div class="sigin_iconwrap">
                             <div class="sigin_icon">
                                 <a href="#"><i class="fa-brands fa-line" style="color: #000000;"></i></a>
@@ -106,7 +103,15 @@
                 </div>
             </div>
         </div>
-    
+        <div class="topbutton" onclick="scrollToTop()"><i class="fa-sharp fa-solid fa-arrow-up"></i></div>
     </footer>
+    <script>
+        function scrollToTop(){
+            window.scrollTo({
+                top:0,
+                behavior:"smooth"
+            })
+        }
+      </script>
 </body>
 </html>

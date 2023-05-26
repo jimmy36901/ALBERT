@@ -41,12 +41,9 @@
                     <div class="login_content">
                         <p class="login_title">Log in</p>
                         <label class="account"><input class="typing " type="text" placeholder="Account"></label>
-                        <label class="password"><input class="typing " type="text" placeholder="Password"></label>
-                            <div class="login_rightarrow_wrap">
-                                <div class="login_rightarrow">
-                                    <button><i class="fa-sharp fa-solid fa-circle-right" style="color: #000000;"></i></button>
-                                </div>
-                            </div>
+                        <label class="password"><input class="typing " type="text" placeholder="Password">
+                            <i class="fa-sharp fa-solid fa-circle-right" style="color: #000000;"></i>
+                        </label>
                             <div class="login_info">
                                 <a href="sigin.html" >registration</a>
                                 <a href="#" >forget password?</a>
@@ -101,7 +98,16 @@
                 </div>
             </div>
         </div>
+        <div class="topbutton" onclick="scrollToTop()"><i class="fa-sharp fa-solid fa-arrow-up"></i></div>
     
     </footer>
+    <script>
+        function scrollToTop(){
+            window.scrollTo({
+                top:0,
+                behavior:"smooth"
+            })
+        }
+      </script>
 </body>
 </html>

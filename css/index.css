@@ -15,6 +15,7 @@
     align-items: center;
     justify-content: space-between;
     width: 80%;
+    max-width: 1200px;
     height: 10vh;
     padding: 10px;
     margin: auto;
@@ -22,6 +23,7 @@
 }
 .logo_pic{
     width: 80%;
+    max-width: 1200px;
     transform:translateX(-50px) ;
 }
 .logo_pic img{
@@ -66,12 +68,13 @@
     justify-content: center;
     align-items: center;
     width: 80%;
+    max-width: 1200px;
     margin: auto;
 }
 .aboutus_content .aboutus_item{
-    margin-top: 10%;
+    margin-top: 100px;
     align-items: center;
-    padding-bottom: 10%;
+    padding-bottom: 100px;
 }
 .aboutus_content .prev{
     position: relative;
@@ -82,25 +85,26 @@
 .aboutus_item h1{
     width: 80%;
     text-align: center;
-    flex-grow: 2;
+    /* flex-grow: 2; */
     font-size: 64px;
-    margin-bottom: 5%;
+    padding-bottom: 10px;
     font-weight: lighter;
     font-family: 'Playfair Display', serif;
     color: #816D6D;
 }
+
 .aboutus_item .pic_text{
     width: 80%;
     font-size: 1em;
-    flex-grow: 2;
-    margin-bottom: 5%;
+    /* flex-grow: 2; */
+    padding-bottom: 10px;
     font-family: 'Playfair Display', serif;
     color: #816D6D;
 }
 .aboutus_item .aboutus_pic{
     width: 80%;
     /* height: 20%; */
-    flex-grow: 3;
+    /* flex-grow: 3; */
     box-sizing: border-box;
     border: 5px solid white;
     filter: drop-shadow(5px 5px 0.5em lightgray);
@@ -228,11 +232,12 @@
   .maintain_backgroundwrap{
     width: 100%;
     background-color: #fff;
-    padding-top: 10%;
+    padding-top: 100px;
   }
   .maintain_wrap{
     width: 80%;
     margin: auto;
+    max-width: 1200px;
     /* display: flex;
     flex-direction: column;
     justify-content: center; */
@@ -262,7 +267,7 @@
   }
 
   .maintain_title .maintain_pic{
-    width: 100%;
+    width: 100%; 
     position: absolute;
     top: -10%;
     left: 90%;
@@ -272,13 +277,15 @@
   .maintain_title .maintain_pic img{
     width: 100%;
     vertical-align: top;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px lightgray;
   }
   .maintain_subtitle{
-    padding-top: 5%;
+    padding-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20%;
+    padding-bottom: 200px;
     transform: translateX(-100px);
   }
   .maintain_subtitle .subtitle_item{
@@ -292,6 +299,8 @@
   }
   .subtitle_item .subtitle_pic img{
     width: 100%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px lightgray;
   }
   .subtitle_item .subtitle_text{
     font-size: 150px;
@@ -305,6 +314,8 @@
   }
   .subtitle_item .subtitle_photo img{
     width: 100%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px lightgray;
   }
   .maintain_subtitle .photo{
     position: relative;
@@ -320,15 +331,15 @@
     text-align: center;
     font-family: 'Playfair Display', serif;
     display: block;
-    padding: 5% 0%;
+    padding: 50px 0%;
   }
   .maintain_content{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 10%;
+    padding-bottom: 100px;
   }
   .maintain_contetnt_item{
-    padding-left: 5%;
+    padding-left: 50px;
   }
   .maintain_content_info{
     width: 100%;
@@ -339,7 +350,7 @@
   .maintain_content_info .num{
     font-size: 80px;
     font-family: 'Playfair Display', serif;
-    padding-bottom: 5%;
+    padding-bottom: 50px;
     height: 40%;
     
   }
@@ -359,7 +370,7 @@
   .footer_bannerwrap{
     width: 100%;
     background-color: #B6A286;
-    padding: 5% 0%;
+    padding: 50px 0px;
   }
   .footer_wrap{
     width: 80%;
@@ -389,7 +400,7 @@
     font-size: 42px;
     font-family: 'Playfair Display', serif;
     color: #FFFFFF;
-    padding-bottom: 5%;
+    padding-bottom: 30px;
     text-align: left;
   }
   .footer_aboutus nav li{
@@ -405,18 +416,20 @@
     font-size: 42px;
     font-family: 'Playfair Display', serif;
     color: #FFFFFF;
-    padding-bottom: 5%;
+    padding-bottom: 30px;
     text-align: left;
   }
   .footer_business .business_info{
     color: #000000;
     font-size: 28px;
     font-family: 'Playfair Display', serif;
+    padding-bottom: 5px;
   }
   .footer_business .business_content{
     font-size: 20px;
     font-family: 'Playfair Display', serif;
     color: #000000;
+    padding-bottom: 5px;
   }
   .footer_business .footer_icon{
     display: flex;
@@ -428,5 +441,18 @@
     color: #000000;
     padding: 2%;
     font-size: 24px;
+    text-align: center;
+  }
+  .footer_bannerwrap .topbutton{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 10%;
+    right: 20px;
+    font-size: 24px;
+    line-height: 40px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 50%;
     text-align: center;
   }

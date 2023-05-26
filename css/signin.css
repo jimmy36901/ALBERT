@@ -65,7 +65,7 @@
     position: relative;
 }
 .sigin .sigin_content{
-    width: 80%;
+    width: 50%;
     margin: auto;
 }
 .sigin .sigin_title{
@@ -76,9 +76,10 @@
 }
 .sigin .typing{
     background-color: #DCD2C3;
-    padding: 5% 0%;
+    padding: 10px 15px;
     border: 1px solid transparent;
     font-size: 20px;
+    box-sizing: border-box;
 }
 .sigin .account{
     padding-bottom: 2%;
@@ -92,7 +93,6 @@
 .sigin label{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 input.typing{
     border-radius: 10px;
@@ -100,21 +100,19 @@ input.typing{
 ::placeholder{
     font-family: 'Playfair Display', serif;
     font-size: 20px;
-    padding-left: 5%;
 }
-.sigin_content .sigin_rightarrow_wrap{
-    display: flex;
-    width: 80%;
-    margin: auto;
-    justify-content: center;
-    transform: translateX(15%);
-    padding: 2% 0%;
+.sigin_content  .E-mail{
+    position: relative;
 }
-.sigin_rightarrow_wrap .sigin_rightarrow button{
-    border: 0;
+.sigin_content  .E-mail .fa-circle-right{
     cursor: pointer;
-    padding: 2% 0%;
     font-size: 20px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    padding-top: 10px;
+    top: 100%;
+    right: 0;
 }
 .sigin_content a{
     font-size: 20px;
@@ -127,10 +125,10 @@ input.typing{
 .sigin_content .sigin_iconwrap{
     display: flex;
     justify-content: center;
-    padding: 5%;;
+    padding: 40px 0px 20px 0px;
 }
 .sigin_content .sigin_icon{
-    width: 50%;
+    width: 80%;
     display: flex;
     justify-content: space-around;
 }
@@ -215,6 +213,19 @@ input.typing{
     color: #000000;
     padding: 2%;
     font-size: 24px;
+    text-align: center;
+  }
+  .footer_bannerwrap .topbutton{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 10%;
+    right: 20px;
+    font-size: 24px;
+    line-height: 40px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 50%;
     text-align: center;
   }
 
