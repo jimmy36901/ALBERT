@@ -42,6 +42,12 @@
     padding: 0px 10px;
     font-family: 'Playfair Display', serif;
 }
+.logo_list li a:hover{
+    font-style: italic;
+    color: #4A4B3B;
+    filter:drop-shadow(1px 1px 1px gray) ;
+    transition: .3s ease-in;
+ }
 .product_banner_text{
     width: 80%;
     height: 80vh;
@@ -191,37 +197,38 @@
 .footer_bannerwrap{
     width: 100%;
     background-color: #B6A286;
-    padding: 5% 0%;
+    padding: 50px 0px;
   }
   .footer_wrap{
     width: 80%;
     margin: auto;
+    max-width: 1200px;
     display: flex;
     justify-content: space-around;
   }
   .footer_item{
-    width: 33.3%;
+    width: 33.33333%;
     display: flex;
     justify-content: center;
   }
   .footer_item .brandstory .brandstory_title{
-    font-size: 42px;
+    font-size: 32px;
     font-family: 'Playfair Display', serif;
     color: #FFFFFF;
     text-align: center;
-    padding-bottom: 5%;
+    padding-bottom: 30px;
   }
   .footer_item .brandstory .brandstory_content{
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Playfair Display', serif;
     color: #FFFFFF;
     text-align: center;
   }
   .footer_aboutus .title{
-    font-size: 42px;
+    font-size: 32px;
     font-family: 'Playfair Display', serif;
     color: #FFFFFF;
-    padding-bottom: 5%;
+    padding-bottom: 30px;
     text-align: left;
   }
   .footer_aboutus nav li{
@@ -232,35 +239,53 @@
     font-size: 20px;
     font-family: 'Playfair Display', serif;
     color: #000000;
+    transition: .3s;
+  }
+  .footer_aboutus nav li a:hover{
+    color: white;
+    transition: .3s;
   }
   .footer_business .business_title{
-    font-size: 42px;
+    font-size: 32px;
     font-family: 'Playfair Display', serif;
     color: #FFFFFF;
-    padding-bottom: 5%;
+    padding-bottom: 30px;
     text-align: left;
   }
   .footer_business .business_info{
     color: #000000;
-    font-size: 28px;
-    font-family: 'Playfair Display', serif;
-  }
-  .footer_business .business_content{
     font-size: 20px;
     font-family: 'Playfair Display', serif;
+    padding-bottom: 5px;
+  }
+  .footer_business .business_content{
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
     color: #000000;
+    padding-bottom: 5px;
   }
   .footer_business .footer_icon{
     display: flex;
     justify-content: center;
-    padding-top: 5%;
+    padding-top: 5px;
   }
   .footer_icon .ins,.fb{
     width: 10%;
     color: #000000;
-    padding: 2%;
+    padding: 10px;
     font-size: 24px;
     text-align: center;
+    transition: 0.3s;
+  }
+  .footer_icon .ins:hover{
+    color: white;
+    transform: rotate(15deg);
+    transition: 0.3s;
+  }
+  .footer_icon .fb:hover{
+    color: white;
+    transform: rotate(15deg);
+    transition: 0.3s;
   }
   .footer_bannerwrap .topbutton{
     position: fixed;
@@ -275,7 +300,8 @@
     border-radius: 50%;
     text-align: center;
   }
-
-
-
-
+  .footer_bannerwrap .topbutton:hover{
+    transition: .3s;
+    background-color: black;
+    color: white;
+  }
