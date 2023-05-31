@@ -32,6 +32,15 @@
                 <li><a href="national.html">National Delivery</a></li>
                 <li><a href="#"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a></li>
             </div>
+
+            <button id="btn" ><i class="fa-solid fa-bars" style=" color:#B6A286;"></i></button>
+            <div id="hamburger_menu" class="hamburger_wrap">
+                <li class="hamburger_list"><a href="product.html">Product</a> </li>
+                <li class="hamburger_list"><a href="location.html">Contact us</a></li>
+                <li class="hamburger_list"><a href="login.html">Log in</a></li>
+                <li class="hamburger_list"><a href="national.html">National Delivery</a></li>
+                <li class="hamburger_list"><a href="">Shopping Cart<i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a></li>
+            </div>
         </nav>      
     </div>
 
@@ -42,9 +51,9 @@
     <article class="product_listwrap">
         <!-- <ul> -->
             <div class="product_list">
-                <li>Pampas Grass</li>
-                <li>Canterbury bells</li>
-                <li>Bellflower</li>
+                <li id="button_left">Pampas Grass</li>
+                <li id="button_center">Canterbury bells</li>
+                <li id="button_right">Bellflower</li>
             </div>
        <!-- </ul> -->
        <section>
@@ -52,7 +61,7 @@
                 <div class="product_info_pic" style="margin-bottom: -500px;"><img src="flowerpic/product_info_pic.png" alt=""></div>
             <div class="prodcut_content">
                     <div class="product_title_wrap">
-                        <h3 class="title">Pampas Grass</h3>
+                        <h3 class="title" id="first_group">Pampas Grass</h3>
                     </div>
                 <div class="product_wrap">
                     <div class="product_pic item_leftttop"><a href="product_summary.html"><img src="flowerpic/Rectangle 128.jpg" alt=""></div></a>
@@ -71,7 +80,7 @@
             <div class="product_info_photo">
                 <div class="prodcut_content">
                         <div class="product_title_wrap">
-                            <h3 class="title">Canterbury bells</h3>
+                            <h3 class="title" id="sec_group">Canterbury bells</h3>
                         </div>
                     <div class="product_wrap">
                         <div class="product_pic item_leftttop"><a href="product_summary.html"><img src="flowerpic/Rectangle 128.jpg" alt=""></div></a>
@@ -92,7 +101,7 @@
                 <div class="product_info_pic product_image" style="margin-bottom: -350px;"><img src="flowerpic/product_image.png" alt=""></div>
             <div class="prodcut_content">
                     <div class="product_title_wrap">
-                        <h3 class="title">Bellflower</h3>
+                        <h3 class="title" id="triple_group">Bellflower</h3>
                     </div>
                 <div class="product_wrap">
                     <div class="product_pic item_leftttop"><a href="product_summary.html"><img src="flowerpic/Rectangle 128.jpg" alt=""></div></a>
@@ -120,9 +129,9 @@
                 <div class="footer_aboutus">
                     <p class="title">About</p>
                     <nav>
-                        <li><a href="#" class="foot_about_info">Flora product</a></li>
-                        <li><a href="#" class="foot_about_info">National delivery</a></li>
-                        <li><a href="#" class="foot_about_info">FAQ</a></li>
+                        <li><a href="product.html" class="foot_about_info">Flora product</a></li>
+                        <li><a href="national.html" class="foot_about_info">National delivery</a></li>
+                        <li><a href="location.html" class="foot_about_info">FAQ</a></li>
                     </nav>
                 </div>
             </div>
@@ -152,6 +161,42 @@
                 behavior:"smooth"
             })
         }
-      </script>
+    </script>
+    <script>
+        document.getElementById("button_left").addEventListener("click", () => {
+          document.getElementById("first_group").scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+
+    <script>
+        document.getElementById("button_center").addEventListener("click", () => {
+        document.getElementById("sec_group").scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+
+    <script>
+        document.getElementById("button_right").addEventListener("click", () => {
+        document.getElementById("triple_group").scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+
+<script type="text/javascript">
+    function onOff() {
+            let hamburger_menu = document.getElementById("hamburger_menu");
+            if (hamburger_menu.className === "hamburger_wrap") {
+                hamburger_menu.className = "hamburger_wrap open";
+            } else {
+                hamburger_menu.className = "hamburger_wrap";
+            }
+        }
+        
+        function init() {
+            document.getElementById("btn").onclick = onOff;
+        }
+        
+        window.addEventListener("load", init);
+</script>
+
+
 </body>
 </html>

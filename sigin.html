@@ -39,6 +39,15 @@
                 <li><a href="national.html">National Delivery</a></li>
                 <li><a href="#"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a></li>
             </div>
+
+            <button id="btn" ><i class="fa-solid fa-bars" style=" color:#B6A286;"></i></button>
+            <div id="hamburger_menu" class="hamburger_wrap">
+                <li class="hamburger_list"><a href="product.html">Product</a> </li>
+                <li class="hamburger_list"><a href="location.html">Contact us</a></li>
+                <li class="hamburger_list"><a href="login.html">Log in</a></li>
+                <li class="hamburger_list"><a href="national.html">National Delivery</a></li>
+                <li class="hamburger_list"><a href="">Shopping Cart<i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a></li>
+            </div>
         </nav>
         </div>
         
@@ -81,9 +90,9 @@
                 <div class="footer_aboutus">
                     <p class="title">About</p>
                     <nav>
-                        <li><a href="#" class="foot_about_info">Flora product</a></li>
-                        <li><a href="#" class="foot_about_info">National delivery</a></li>
-                        <li><a href="#" class="foot_about_info">FAQ</a></li>
+                        <li><a href="product.html" class="foot_about_info">Flora product</a></li>
+                        <li><a href="national.html" class="foot_about_info">National delivery</a></li>
+                        <li><a href="location.html" class="foot_about_info">FAQ</a></li>
                     </nav>
                 </div>
             </div>
@@ -113,5 +122,22 @@
             })
         }
       </script>
+
+<script type="text/javascript">
+    function onOff() {
+            let hamburger_menu = document.getElementById("hamburger_menu");
+            if (hamburger_menu.className === "hamburger_wrap") {
+                hamburger_menu.className = "hamburger_wrap open";
+            } else {
+                hamburger_menu.className = "hamburger_wrap";
+            }
+        }
+        
+        function init() {
+            document.getElementById("btn").onclick = onOff;
+        }
+        
+        window.addEventListener("load", init);
+</script>
 </body>
 </html>

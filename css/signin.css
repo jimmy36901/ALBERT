@@ -12,11 +12,11 @@
     align-items: center;
     justify-content: space-between;
     width: 80%;
+    max-width: 1200px;
     height: 10vh;
     padding: 15px 0px;
     margin: auto;
     border-bottom: 1px solid black;
-    overflow: hidden;
 }
 .logo_pic{
     width: 80%;
@@ -25,10 +25,15 @@
 }
 .logo_pic img{
     width: 100%;
-    overflow: hidden;
 }
 .logo_navbar .logo_list{
     display: flex;
+}
+.logo_navbar button{
+  display: none;
+}
+.logo_navbar .hamburger_wrap{
+  display: none;
 }
 .logo_list li{
     list-style: none;
@@ -47,6 +52,7 @@
  }
 .sigin_wrap{
     width: 80%;
+    max-width: 1200px;
     margin: auto;
     padding: 5% 0%;
 }
@@ -112,7 +118,7 @@ input.typing{
 }
 .sigin_content  .E-mail .fa-circle-right{
     cursor: pointer;
-    font-size: 20px;
+    font-size: 30px;
     position: absolute;
     width: 20px;
     height: 20px;
@@ -257,4 +263,307 @@ input.typing{
     transition: .3s;
     background-color: black;
     color: white;
+  }
+  /* -------------RWD------------- */
+  @media screen and (max-width:768px){
+    .logo_wrap{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width:768px;
+      height: 10vh;
+      padding: 15px 0px;
+      margin: auto;
+      border-bottom: none;
+  }
+  .logo_pic{
+      width: 80%;
+      min-width: 200px;
+      transform:translateX(-40px) ;
+  }
+  .logo_pic img{
+      width: 100%;
+  }
+  .logo_navbar .logo_list{
+      display: none;
+  }
+  #btn {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 23px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+  }
+  #hamburger_menu {
+    display: block;
+    width: 50%;
+    height: 100vh;
+    background-color:#DCD2C3;
+    position: fixed;
+    top: 75px;
+    transition: right 1s;
+    right: -50%;
+    z-index: 999999;
+    /* border: 2px solid white; */
+  }
+  #hamburger_menu.open {
+    right: 0;
+  }
+  .hamburger_wrap .hamburger_list{
+    list-style: none;
+    text-align: left;
+    padding: 5px 5px;
+    border-top:2px solid white;
+    box-sizing: border-box;
+    }
+    .hamburger_wrap .hamburger_list:first-child{
+    border-top: none;
+    }
+    .hamburger_wrap .hamburger_list a{
+    text-decoration: none;
+    font-size: 14px;
+    color:#4A4B3B;
+    font-family: 'Playfair Display', serif;
+    }
+  .logo_list li{
+      list-style: none;
+  }
+  .logo_list li a{
+      text-decoration: none;
+      color: #4A4B3B;
+      padding: 0px 10px;
+      font-family: 'Playfair Display', serif;
+  }
+  .logo_list li a:hover{
+      font-style: italic;
+      color: #4A4B3B;
+      filter:drop-shadow(1px 1px 1px gray) ;
+      transition: .3s ease-in;
+   }
+  .sigin_wrap{
+      width: 80%;
+      max-width:768px;
+      margin: auto;
+      padding: 30px 0px
+  }
+  .sigin_pic{
+      background-image: none;
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .sigin_pic .sigin{
+      width: 100%;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: 10px;
+      /* filter: drop-shadow(1px 1px 5px black); */
+      box-shadow: 3px 3px 3px lightgray;
+      position: relative;
+  }
+  .sigin .sigin_content{
+      width: 80%;
+      margin: auto;
+  }
+  .sigin .sigin_title{
+      font-size: 40px;
+      font-family: 'Playfair Display', serif;
+      padding: 5% 0% ;
+      text-align: center;
+  }
+  .sigin .typing{
+      background-color: #DCD2C3;
+      padding: 10px 15px;
+      border: 1px solid transparent;
+      font-size: 20px;
+      box-sizing: border-box;
+  }
+  .sigin .account{
+      padding-bottom: 2%;
+  }
+  .sigin .username{
+      padding-bottom: 2%;
+  }
+  .sigin .password{
+      padding-bottom: 2%;
+  }
+  .sigin label{
+      display: flex;
+      flex-direction: column;
+  }
+  input.typing{
+      border-radius: 10px;
+  }
+  ::placeholder{
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+  }
+  .sigin_content  .E-mail{
+      position: relative;
+  }
+  .sigin_content  .E-mail .fa-circle-right{
+      cursor: pointer;
+      font-size: 30px;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      padding-top: 10px;
+      top: 100%;
+      right: 0;
+  }
+  .sigin_content a{
+      font-size: 20px;
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      padding-bottom: 2%;
+      text-decoration: none;
+      color: #000000;
+  }
+  .sigin_content .sigin_iconwrap{
+      display: flex;
+      justify-content: center;
+      padding: 40px 0px 20px 0px;
+  }
+  .sigin_content .sigin_icon{
+      width: 80%;
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+      z-index: 2;
+  }
+  .sigin_leaf{
+      width: 50%;
+      position: absolute;
+      bottom: -30%;
+      right: -10%;
+  }
+  .sigin_leaf img{
+      width: 100%;
+  }
+  .footer_bannerwrap{
+    width: 100%;
+    background-color: #B6A286;
+    padding: 50px 0px;
+  }
+  .footer_wrap{
+    width: 80%;
+    margin: auto;
+    max-width:768px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .footer_item{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+  }
+  .footer_item .brandstory .brandstory_title{
+    font-size: 32px;
+    font-family: 'Playfair Display', serif;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 20px 0px;
+  }
+  .footer_item .brandstory .brandstory_content{
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    color: #FFFFFF;
+    text-align: left;
+  }
+  .footer_aboutus .title{
+    font-size: 32px;
+    font-family: 'Playfair Display', serif;
+    color: #FFFFFF;
+    padding: 20px 0px;
+    text-align: left;
+  }
+  .footer_aboutus nav li{
+    list-style: none;
+    /* background-color: red; */
+    /* border: 1px solid black; */
+    margin: 5px 0px;
+  }
+  .footer_aboutus nav li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    color: #000000;
+    transition: 0s;
+    margin: 10px 0px;
+  }
+  .footer_aboutus nav li a:hover{
+    color: black;
+    transition: 0s;
+  }
+  .footer_business .business_title{
+    font-size: 32px;
+    font-family: 'Playfair Display', serif;
+    color: #FFFFFF;
+    padding: 20px 0px;
+    text-align: left;
+  }
+  .footer_business .business_info{
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    padding-bottom: 5px;
+  }
+  .footer_business .business_content{
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    color: #000000;
+    padding-bottom: 5px;
+  }
+  .footer_business .footer_icon{
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+  }
+  .footer_icon .ins,.fb{
+    width: 10%;
+    color: #000000;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    transition: 0s;
+  }
+  .footer_icon .ins:hover{
+    color: black;
+    transform: rotate(0deg);
+    transition: 0s;
+  }
+  .footer_icon .fb:hover{
+    color: black;
+    transform: rotate(0deg);
+    transition: 0s;
+  }
+  .footer_bannerwrap .topbutton{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 10%;
+    right: 20px;
+    font-size: 24px;
+    line-height: 40px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+    display: none;
+  }
+  .footer_bannerwrap .topbutton:hover{
+    transition: .3s;
+    background-color: black;
+    color: white;
+  }
   }

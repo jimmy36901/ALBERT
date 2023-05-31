@@ -32,6 +32,15 @@
                 <li><a href="national.html">National Delivery</a></li>
                 <li><a href=""><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a></li>
             </div>
+
+            <button id="btn" ><i class="fa-solid fa-bars" style=" color:#B6A286;"></i></button>
+            <div id="hamburger_menu" class="hamburger_wrap">
+                <li class="hamburger_list"><a href="product.html">Product</a> </li>
+                <li class="hamburger_list"><a href="location.html">Contact us</a></li>
+                <li class="hamburger_list"><a href="login.html">Log in</a></li>
+                <li class="hamburger_list"><a href="national.html">National Delivery</a></li>
+                <li class="hamburger_list"><a href="">Shopping Cart<i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a></li>
+            </div>
         </nav>
         </div>
             <div class="logo_story">
@@ -44,7 +53,7 @@
             <section class="aboutus_item prev">
                 <h1>About</h1>
                 <P class="pic_text">We are a passionate and creative dried flower shop, committed to providing every customer with a unique dried flower art experience.</P>
-                <div class="aboutus_pic">
+                <div data-aos="fade-up" class="aboutus_pic">
                   <img src="flowerpic/1.jpg" alt="">
                 </div>
                 <div class="leaf_pic">
@@ -52,10 +61,10 @@
                 </div>
             </section>
             <section class="aboutus_item next">
-                <div class="aboutus_photo">
+                <div data-aos="zoom-in" class="aboutus_photo">
                   <img src="flowerpic/2.jpg" alt="">
                 </div>
-                <p class="photo_text">Our team consists of professional floral designers, focusing on creating one-of-a-kind floral arrangements and providing the best shopping experience for our customers</p>
+                <p class="photo_text">Our team consists of professional floral designers, focusing on creating one-of-a-kind floral arrangements and providing the best shopping experience for our customers.</p>
                 <div class="leaf_photo">
                   <img src="removebg/treple_leaf-removebg-preview(1).png" alt="">
                 </div>
@@ -145,14 +154,14 @@
                         <p class="text">Direct sunlight can cause dry flowers to fade and lose their color.</p>
                     </div>
                     <div class="maintain_content_info">
-                        <div class="num">03</div>
+                        <div class="num">02</div>
                         <h1 class="title">Use a sealant:</h1>
                         <p class="text">You can use a floral spray sealant to protect the dry flowers .</p>
                     </div>
                 </div>
                 <div class="maintain_contetnt_item">
                     <div class="maintain_content_info">
-                        <div class="num">02</div>
+                        <div class="num">03</div>
                         <h1 class="title">Avoid humidity:</h1>
                         <p class="text">Avoid placing them near windows or areas with high humidity.</p>
                     </div>
@@ -180,9 +189,9 @@
                 <div class="footer_aboutus">
                     <p class="title">About</p>
                     <nav>
-                        <li><a href="#" class="foot_about_info">Flora product</a></li>
-                        <li><a href="#" class="foot_about_info">National delivery</a></li>
-                        <li><a href="#" class="foot_about_info">FAQ</a></li>
+                        <li><a href="product.html" class="foot_about_info">Flora product</a></li>
+                        <li><a href="national.html" class="foot_about_info">National delivery</a></li>
+                        <li><a href="location.html" class="foot_about_info">FAQ</a></li>
                     </nav>
                 </div>
             </div>
@@ -208,7 +217,11 @@
 
 
 
-
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+                AOS.init();
+            </script>
 
 
           <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -229,7 +242,7 @@
               0:{
                   items:1
               },
-              600:{
+              770:{
                   items:3
               },
               1000:{
@@ -254,5 +267,22 @@
                 })
             }
           </script>
+
+<script type="text/javascript">
+   function onOff() {
+            let hamburger_menu = document.getElementById("hamburger_menu");
+            if (hamburger_menu.className === "hamburger_wrap") {
+                hamburger_menu.className = "hamburger_wrap open";
+            } else {
+                hamburger_menu.className = "hamburger_wrap";
+            }
+        }
+        
+        function init() {
+            document.getElementById("btn").onclick = onOff;
+        }
+        
+        window.addEventListener("load", init);
+</script>
 </body>
 </html>

@@ -16,11 +16,11 @@
     align-items: center;
     justify-content: space-between;
     width: 80%;
+    max-width: 1200px;
     height: 10vh;
     padding: 15px 0px;
     margin: auto;
     border-bottom: 1px solid black;
-    overflow: hidden;
 }
 .logo_pic{
     width: 80%;
@@ -29,10 +29,15 @@
 }
 .logo_pic img{
     width: 100%;
-    overflow: hidden;
 }
 .logo_navbar .logo_list{
     display: flex;
+}
+.logo_navbar button{
+  display: none;
+}
+.logo_navbar .hamburger_wrap{
+  display: none;
 }
 .logo_list li{
     list-style: none;
@@ -56,6 +61,7 @@
 }
 .FAQ_wrap .FAQ_title{
     width: 80%;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -83,6 +89,7 @@
 }
 .question_content{
     width: 90%;
+    max-width: 1200px;
     margin: auto;
     display: flex;
 }
@@ -121,11 +128,15 @@
     transform: rotate(-10deg);
     box-shadow: 1px 1px 1px lightgray;
     border: 1px solid lightgray;
+    padding: 5px;
+    background-color: white;
+
 }
 .question_item .question_pic img{
     width: 100%;
-    padding: 3%;
-    background-color: white;
+    /* padding: 3%; */
+    
+    vertical-align: bottom;
 }
 .question_item .question_photo{
     width: 70%;
@@ -135,6 +146,8 @@
     transform: rotate(25deg);
     box-shadow: 1px 1px 1px lightgray;
     border: 1px solid lightgray;
+    padding: 5px;
+    background-color: white;
 
 }
 .question_item .question_photo img{
@@ -142,6 +155,7 @@
 }
 .location_title{
     width: 80%;
+    max-width: 1200px;
     margin: auto;
     padding-bottom: 5%;
 }
@@ -155,6 +169,7 @@
 }
 .loaction_wrap{
     width: 80%;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     padding-bottom: 5%;
@@ -313,4 +328,372 @@
     transition: .3s;
     background-color: black;
     color: white;
+  }
+  /* ----------------RWD------------------ */
+  @media screen and (max-width:768px){
+    .logo_wrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 768px;
+        height: 10vh;
+        padding: 15px 0px;
+        margin: auto;
+        border-bottom: none;
+      
+    }
+    .logo_pic{
+        width: 80%;
+        min-width: 200px;
+        transform:translateX(-40px) ;
+        
+    }
+    .logo_pic img{
+        width: 100%;
+      
+    }
+    .logo_navbar .logo_list{
+        display: none;
+    }
+    #btn {
+      display: block;
+      position: absolute;
+      right: 10px;
+      top: 23px;
+      width: 50px;
+      height: 50px;
+      border: none;
+      cursor: pointer;
+  }
+  #hamburger_menu {
+      display: block;
+      width: 50%;
+      height: 100vh;
+      background-color:#DCD2C3;
+      position: fixed;
+      top: 75px;
+      transition: right 1s;
+      right: -50%;
+      z-index: 999999;
+  }
+  #hamburger_menu.open {
+      right: 0;
+  }
+  .hamburger_wrap .hamburger_list{
+    list-style: none;
+    text-align: left;
+    padding: 5px 5px;
+    border-top:2px solid white;
+    box-sizing: border-box;
+  }
+  .hamburger_wrap .hamburger_list:first-child{
+    border-top: none;
+  }
+  .hamburger_wrap .hamburger_list a{
+    text-decoration: none;
+    font-size: 14px;
+    color:#4A4B3B;
+    font-family: 'Playfair Display', serif;
+  }
+    .logo_list li{
+        list-style: none;
+    }
+    .logo_list li a{
+        text-decoration: none;
+        color: #4A4B3B;
+        padding: 0px 10px;
+        font-family: 'Playfair Display', serif;
+    }
+    .logo_list li a:hover{
+        font-style: italic;
+        color: #4A4B3B;
+        filter:drop-shadow(1px 1px 1px gray) ;
+        transition: .3s ease-in;
+     }
+    .FAQ_wrap{
+        width: 100%;
+        background-color: #F1EDE5;
+        overflow: hidden;
+    }
+    .FAQ_wrap .FAQ_title{
+        width: 80%;
+        max-width: 768px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        padding: 50px 0% 15px 0%;
+    }
+    .FAQ_wrap .FAQ_title h1{
+        font-size: 50px;
+        letter-spacing: 1rem;
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+        position: relative;
+        font-weight: lighter;
+    }
+    .FAQ_pic{
+        width: 70%;
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+    }
+    .FAQ_pic img{
+        width: 100%;
+    }
+    .question_Wrap{
+        padding-bottom: 10%;
+    }
+    .question_content{
+        width: 90%;
+        max-width: 768px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .question_content .question_item{
+        width: 50%;
+        margin: auto;
+    }
+    .question_content .question_list{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        background-color: white; 
+        padding: 10px; 
+        box-shadow: 3px 3px 3px lightgray;
+        box-sizing: border-box;
+    }
+    .question_item .list_title{
+        color: #4A4B3B;
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+        padding-bottom: 2%;
+        font-weight: bold;
+        letter-spacing: 3px;
+    }
+    .question_item .list_text{
+        color: #4A4B3B;
+        font-size: 12px;
+        font-family: 'Open Sans', sans-serif;
+        padding-bottom: 5%;
+        letter-spacing: 1px;
+    }
+    .question_item .question_pic{
+        width: 80%;
+        position: relative;
+        transform: rotate(-10deg);
+        box-shadow: 1px 1px 1px lightgray;
+        border: 1px solid lightgray;
+        padding: 5px;
+        background-color: white;
+    }
+    .question_item .question_pic img{
+        width: 100%;
+        background-color: white;
+        vertical-align: bottom;
+    }
+    .question_item .question_photo{
+        width: 70%;
+        position: absolute;
+        top: 70%;
+        left: 40%;
+        transform: rotate(25deg);
+        box-shadow: 1px 1px 1px lightgray;
+        border: 1px solid lightgray;
+        padding: 5px;
+        background-color: white;
+    
+    }
+    .question_item .question_photo img{
+        width: 100%;
+    }
+    .location_title{
+        width: 80%;
+        max-width: 768px;
+        margin: auto;
+        padding-bottom: 5%;
+    }
+    .location_title h1{
+        font-size: 50px;
+        color: #000000;
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+        font-weight: lighter;
+        letter-spacing: 0.5rem;
+        padding: 50px 0px 15px 0px;
+    }
+    .loaction_wrap{
+        width: 80%;
+        max-width: 768px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 5%;
+    }
+    .loaction_wrap:nth-child(odd) {
+        flex-direction: row-reverse;
+        flex-direction: column;
+    }
+    .location_item{
+        width: 100%;
+    }
+    .location_item .location_pic{
+        width: 100%;
+        overflow: hidden;
+        padding: 0 0 15px;
+    }
+    .location_item .location_pic img{
+        width: 100%;
+        transition: 0s;
+        transform: none;
+    }
+    .location_pic img:hover{
+        transition: 0s;
+        transform: none;
+    }
+    .location_item .location_text_wrap{
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center; 
+    }
+    .location_item .location_text_wrap .location_text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .location_item .location_text_wrap .location_text h3{
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: 1px;
+        padding-bottom: 6px;
+    }
+    .location_item .location_text_wrap .location_text p{
+        font-size: 12px;
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: 1px;
+        padding-bottom: 10px;
+    }
+    .footer_bannerwrap{
+        width: 100%;
+        background-color: #B6A286;
+        padding: 50px 0px;
+      }
+      .footer_wrap{
+        width: 80%;
+        margin: auto;
+        max-width:768px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      .footer_item{
+        width: 100%;
+        display: flex;
+        justify-content: start;
+      }
+      .footer_item .brandstory .brandstory_title{
+        font-size: 32px;
+        font-family: 'Playfair Display', serif;
+        color: #FFFFFF;
+        text-align: left;
+        padding: 20px 0px;
+      }
+      .footer_item .brandstory .brandstory_content{
+        font-size: 16px;
+        font-family: 'Playfair Display', serif;
+        color: #FFFFFF;
+        text-align: left;
+      }
+      .footer_aboutus .title{
+        font-size: 32px;
+        font-family: 'Playfair Display', serif;
+        color: #FFFFFF;
+        padding: 20px 0px;
+        text-align: left;
+      }
+      .footer_aboutus nav li{
+        list-style: none;
+        /* background-color: red; */
+        /* border: 1px solid black; */
+        margin: 5px 0px;
+      }
+      .footer_aboutus nav li a{
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Playfair Display', serif;
+        color: #000000;
+        transition: 0s;
+        margin: 10px 0px;
+      }
+      .footer_aboutus nav li a:hover{
+        color: black;
+        transition: 0s;
+      }
+      .footer_business .business_title{
+        font-size: 32px;
+        font-family: 'Playfair Display', serif;
+        color: #FFFFFF;
+        padding: 20px 0px;
+        text-align: left;
+      }
+      .footer_business .business_info{
+        color: #000000;
+        font-size: 20px;
+        font-family: 'Playfair Display', serif;
+        padding-bottom: 5px;
+      }
+      .footer_business .business_content{
+        font-size: 16px;
+        font-family: 'Playfair Display', serif;
+        color: #000000;
+        padding-bottom: 5px;
+      }
+      .footer_business .footer_icon{
+        display: flex;
+        justify-content: center;
+        padding-top: 5px;
+      }
+      .footer_icon .ins,.fb{
+        width: 10%;
+        color: #000000;
+        padding: 10px;
+        font-size: 24px;
+        text-align: center;
+        transition: 0s;
+      }
+      .footer_icon .ins:hover{
+        color: black;
+        transform: rotate(0deg);
+        transition: 0s;
+      }
+      .footer_icon .fb:hover{
+        color: black;
+        transform: rotate(0deg);
+        transition: 0s;
+      }
+      .footer_bannerwrap .topbutton{
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        bottom: 10%;
+        right: 20px;
+        font-size: 24px;
+        line-height: 40px;
+        cursor: pointer;
+        border: 1px solid black;
+        border-radius: 50%;
+        text-align: center;
+        display: none;
+      }
+      .footer_bannerwrap .topbutton:hover{
+        transition: .3s;
+        background-color: black;
+        color: white;
+      }
   }
