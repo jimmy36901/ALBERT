@@ -252,7 +252,7 @@
     background-image: url(../map/america_banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: none;
+    background-attachment: initial;
     background-position-x: -300px ;
     /* background-position-y: 90%; */
 }
@@ -381,7 +381,7 @@
     height: 70vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: none;
+    background-attachment: initial;
     background-color:#F1EDE5;
     line-height: 70vh;
     font-size: 70px;
@@ -396,14 +396,14 @@
     height: 70vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: none;
+    background-attachment: initial;
   }
 .button{
     transform: translate(-50%,50%);
 }
 .franch{
     background-image: url(../map/Franch_banner.jpg);
-    background-position-x: -800px ;
+    background-position-x: -500px ;
 }
 .taipei{
     background-image: url(../map/Taiwan_banner.jpg);

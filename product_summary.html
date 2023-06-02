@@ -45,11 +45,11 @@
 
         <div class="product_summarywrap">
             <div class="product_summary_item " style="background-color:transparent ; margin-right: 2%;" >
-                <div class="product_summary_pic"><img src="flowerpic/product_pic.jpg" alt=""></div>
+                <div class="product_summary_pic" ><img src="flowerpic/A11-1-1.jpeg" alt="" id="mainImage" onclick="displayImage(this)"></div>
                 <div class="product_summary_photo">
-                    <div class="product_summary_image"><img src="flowerpic/product_image1.jpg" alt=""></div>
-                    <div class="product_summary_image"><img src="flowerpic/product_image2.jpg" alt=""></div>
-                    <div class="product_summary_image"><img src="flowerpic/product_image3.jpg" alt=""></div>
+                    <div class="product_summary_image"><img src="flowerpic/A11-1-1.jpeg" alt="" onclick="displayImage(this)"></div>
+                    <div class="product_summary_image"><img src="flowerpic/A12-1.jpg" alt="" onclick="displayImage(this)"></div>
+                    <div class="product_summary_image"><img src="flowerpic/A13-1.jpg" alt="" onclick="displayImage(this)"></div>
                 </div>
                 
             </div>
@@ -137,21 +137,28 @@
         }
       </script>
 
-<script type="text/javascript">
-    function onOff() {
-            let hamburger_menu = document.getElementById("hamburger_menu");
-            if (hamburger_menu.className === "hamburger_wrap") {
-                hamburger_menu.className = "hamburger_wrap open";
-            } else {
-                hamburger_menu.className = "hamburger_wrap";
+    <script type="text/javascript">
+        function onOff() {
+                let hamburger_menu = document.getElementById("hamburger_menu");
+                if (hamburger_menu.className === "hamburger_wrap") {
+                    hamburger_menu.className = "hamburger_wrap open";
+                } else {
+                    hamburger_menu.className = "hamburger_wrap";
+                }
             }
+            
+            function init() {
+                document.getElementById("btn").onclick = onOff;
+            }
+            
+            window.addEventListener("load", init);
+    </script>
+
+    <script>
+        function displayImage(image) {
+        var mainImage = document.getElementById('mainImage');
+        mainImage.src = image.src;
         }
-        
-        function init() {
-            document.getElementById("btn").onclick = onOff;
-        }
-        
-        window.addEventListener("load", init);
-</script>
+    </script>
 </body>
 </html>
