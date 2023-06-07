@@ -242,6 +242,19 @@
   background-color: black;
   color: white;
 }
+.declaration_wrap{
+  background-color: #B6A286;
+  width: 100%;
+  padding: 20px 0px;
+}
+.declaration{
+  width: 60%;
+  margin: auto;
+  font-size: 12px;
+  display: block;
+  color: white;
+  text-align: center;
+}
 /* ----------------RWD--------------- */
 
 
@@ -280,41 +293,78 @@
 .logo_navbar .logo_list{
     display: none;
 }
-#btn {
+#btn{
+  width: 30px;
+  height: 25px;
   display: block;
   position: absolute;
-  right: 10px;
   top: 23px;
-  width: 50px;
-  height: 50px;
-  border: none;
+  right: 10px;
+  transition: .5s ease-in-out;
+  z-index: 99;
   cursor: pointer;
+  border: none;
+  background: none;
+  box-sizing: border-box;
+}
+#btn span{
+  display: block;
+  position: absolute;
+  left: 0;
+  height: 5px; 
+  border-radius: 10px;
+  width: 100%;
+  background: #B6A286;;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+#btn span:nth-child(1) {
+  top: 0px;
+}
+#btn span:nth-child(2) {
+  top: 10px;
+}
+#btn span:nth-child(3) {
+  bottom: 0px;
+}
+#btn.open span:nth-child(1) {
+  top: 10px;
+  transform: rotate(135deg);
+}
+#btn.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+#btn.open span:nth-child(3) {
+  top: 10px;
+  transform: rotate(-135deg);
 }
 #hamburger_menu {
-  display: block;
-  width: 50%;
-  height: 100vh;
-  background-color:#DCD2C3;
-  position: fixed;
-  top: 75px;
-  transition: right 1s;
-  right: -50%;
-  z-index: 999999;
-  /* border: 2px solid white; */
+    display: block;
+    width: 50%;
+    height: 100vh;
+    background-color:#DCD2C3;
+    position: fixed;
+    top: 0px;
+    transition: right 1s;
+    right: -50%;
+    z-index: 9;
 }
 #hamburger_menu.open {
-  right: 0;
+    right: 0;
 }
 .hamburger_wrap .hamburger_list{
   list-style: none;
-  text-align: left;
-  padding: 5px 5px;
+  text-align: center;
+  padding: 10px 10px;
   border-top:2px solid white;
   box-sizing: border-box;
-  }
-  .hamburger_wrap .hamburger_list:first-child{
+}
+.hamburger_wrap .hamburger_list:first-child{
   border-top: none;
-  }
+  margin: 73px 0px 0px 0px;
+}
   .hamburger_wrap .hamburger_list a{
   text-decoration: none;
   font-size: 14px;
@@ -403,7 +453,7 @@
 }
 .franch{
     background-image: url(../map/Franch_banner.jpg);
-    background-position-x: -500px ;
+    background-position-x: -250px ;
 }
 .taipei{
     background-image: url(../map/Taiwan_banner.jpg);
@@ -532,5 +582,124 @@
   transition: .3s;
   background-color: black;
   color: white;
+}
+}
+/* -----------------RWD(1024)----------------- */
+@media screen and (min-width:769px) and (max-width:1024px){
+  .logo_wrap{
+    max-width: 1024px;
+    /* border: none; */
+  }
+  .logo_list li a {
+    white-space: nowrap;
+  }
+  .logo_list li a:hover{
+    font-style: italic;
+    color: #4A4B3B;
+    filter:drop-shadow(1px 1px 1px gray) ;
+    transition: 0s ease-in;
+  }
+  .bannerwrap{
+    width: 100%;
+    height: 90vh;
+    background-image: url(../map/america_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: initial;
+    /* position: fixed;
+    z-index: -1; */
+    background-position-x: -200px ;
+    /* background-position-y: 90%; */
+}
+.national_bannerwrap{
+  width: 50%;
+  max-width: 1024px;
+  height: 50%;
+  margin: auto;
+  /* background-color: red; */
+}
+.national_banner .national_text{
+  /* background-color: #00f; */
+  font-weight: bolder;
+  font-size: 24px;
+  border: 3px solid white;
+  padding: 5px;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  text-decoration: none;
+  transition: none;
+}
+.national_text:hover{
+  transition: none;
+  background-color: none;
+}
+.national_banner_text{
+  font-size: 180px;
+  background-attachment: initial;
+  /* position: fixed;
+  z-index: -1; */
+}
+.national_country_wrap{
+  background-attachment: initial;
+  /* position: fixed;
+  z-index: -1; */
+}
+.franch{
+  background-image: url(../map/Franch_banner.jpg);
+  background-position-x: -250px ;
+  /* position: fixed;
+  z-index: -1; */
+}
+.footer_wrap{
+  max-width: 1024px;
+}
+.footer_item .brandstory .brandstory_title{
+  font-size: 28px;
+}
+.footer_item .brandstory .brandstory_content{
+  font-size: 14px;
+}
+.footer_aboutus .title{
+  font-size: 28px;
+}
+.footer_aboutus nav li{
+  list-style: none;
+  /* background-color: red; */
+  /* border: 1px solid black; */
+  margin: 5px 0px;
+}
+.footer_aboutus nav li a{
+  font-size: 20px;
+}
+.footer_aboutus nav li a:hover{
+  color: black;
+  transition: 0s;
+}
+.footer_business .business_title{
+  font-size: 28px;
+}
+.footer_business .business_info{
+  font-size: 16px;
+}
+.footer_business .business_content{
+  font-size: 12px;
+}
+.footer_icon .ins,.fb{
+  width: 10%;
+  color: #000000;
+  padding: 10px;
+  font-size: 24px;
+  text-align: center;
+  transition: 0s;
+}
+.footer_icon .ins:hover{
+  color: black;
+  transform: rotate(0deg);
+  transition: 0s;
+}
+.footer_icon .fb:hover{
+  color: black;
+  transform: rotate(0deg);
+  transition: 0s;
 }
 }

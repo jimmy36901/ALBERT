@@ -50,6 +50,7 @@
     padding: 0px 10px;
     font-family: 'Playfair Display', serif;
     transition: .3s ease-in;
+    white-space: nowrap;
 }
 .logo_list li a:hover{
    font-style: italic;
@@ -327,6 +328,7 @@
   }
   .maintain_subtitle .subtitle_photo{
     width: 80%;
+    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -481,11 +483,24 @@
     background-color: black;
     color: white;
   }
+  .declaration_wrap{
+    background-color: #B6A286;
+    width: 100%;
+    padding: 20px 0px;
+  }
+  .declaration{
+    width: 60%;
+    margin: auto;
+    font-size: 12px;
+    display: block;
+    color: white;
+    text-align: center;
+  }
 
 
 
 
-  /* -------------------------RWD------------------------- */
+  /* -----------------RWD(768)----------------- */
   @media screen and (max-width:768px){
     .logo_wrap{
       width: 100%;
@@ -505,46 +520,84 @@
   .logo_navbar .logo_list{
       display: none;
   }
-  #btn {
+  #btn{
+    width: 30px;
+    height: 25px;
     display: block;
     position: absolute;
-    right: 10px;
     top: 23px;
-    width: 50px;
-    height: 50px;
-    border: none;
+    right: 10px;
+    transition: .5s ease-in-out;
+    z-index: 99;
     cursor: pointer;
-}
-#hamburger_menu {
+    border: none;
+    background: none;
+    box-sizing: border-box;
+  }
+  #btn span{
     display: block;
-    width: 50%;
-    height: 100vh;
-    background-color:#DCD2C3;
-    position: fixed;
-    top: 75px;
-    transition: right 1s;
-    right: -50%;
-    z-index: 999999;
-}
-#hamburger_menu.open {
-    right: 0;
-}
-.hamburger_wrap .hamburger_list{
-  list-style: none;
-  text-align: left;
-  padding: 5px 5px;
-  border-top:2px solid white;
-  box-sizing: border-box;
-}
-.hamburger_wrap .hamburger_list:first-child{
-  border-top: none;
-}
-.hamburger_wrap .hamburger_list a{
-  text-decoration: none;
-  font-size: 14px;
-  color:#4A4B3B;
-  font-family: 'Playfair Display', serif;
-}
+    position: absolute;
+    left: 0;
+    height: 5px; 
+    border-radius: 10px;
+    width: 100%;
+    background: #B6A286;;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+  }
+  
+  #btn span:nth-child(1) {
+    top: 0px;
+  }
+  #btn span:nth-child(2) {
+    top: 10px;
+  }
+  #btn span:nth-child(3) {
+    bottom: 0px;
+  }
+  #btn.open span:nth-child(1) {
+    top: 10px;
+    transform: rotate(135deg);
+  }
+  #btn.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+  }
+  #btn.open span:nth-child(3) {
+    top: 10px;
+    transform: rotate(-135deg);
+  }
+  #hamburger_menu {
+      display: block;
+      width: 50%;
+      height: 100vh;
+      background-color:#DCD2C3;
+      position: fixed;
+      top: 0px;
+      transition: right 1s;
+      right: -50%;
+      z-index: 9;
+  }
+  #hamburger_menu.open {
+      right: 0;
+  }
+  .hamburger_wrap .hamburger_list{
+    list-style: none;
+    text-align: center;
+    padding: 10px 10px;
+    border-top:2px solid white;
+    box-sizing: border-box;
+  }
+  .hamburger_wrap .hamburger_list:first-child{
+    border-top: none;
+    margin: 73px 0px 0px 0px;
+  }
+  .hamburger_wrap .hamburger_list a{
+    text-decoration: none;
+    font-size: 14px;
+    color:#4A4B3B;
+    font-family: 'Playfair Display', serif;
+  }
 
   .logo_list li{
       list-style: none;
@@ -1007,3 +1060,179 @@
     background-color: black;
     color: white;
   }}
+
+  /* -----------------RWD(1024)----------------- */
+  @media screen and (min-width:769px) and (max-width:1024px){
+    .logo_wrap{
+      max-width: 1024px;
+      /* border: none; */
+    }
+    .logo_list li a {
+      white-space: nowrap;
+    }
+    .logo_story{
+      max-width: 1024px;
+    }
+    .aboutus_content{
+      max-width: 1024px;
+    }
+    .owl-carousel .slider_content {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      box-sizing: border-box;
+      border: 5px solid white;
+      background-color: #fff;
+  }
+    .slider_content .heart {
+      font-family: 'Playfair Display', serif;
+      font-size: 16px;
+      color: #b6a286;
+      cursor: pointer;
+      transition: 0s;
+  }
+  .slider_content .heart:hover{
+    transition: 0s;
+    color: #b6a286;
+  }
+    .slider_content .share {
+      font-family: 'Playfair Display', serif;
+      font-size: 16px;
+      color: black;
+      cursor: pointer;
+  }
+    .maintain_wrap{
+      max-width: 1024px;
+    }
+    .maintain_title span {
+      font-size: 100px;
+      display: inline-block;
+      font-family: 'Cinzel Decorative', cursive;
+      text-align: center;
+      position: relative;
+      z-index: 0;
+      color: #684139;
+      transform: translateX(-100px);
+      letter-spacing: 5px;
+  }
+    .maintain_title .maintain_pic {
+      width: 100%;
+      position: absolute;
+      top: -10%;
+      left: 80%;
+      z-index: 0;
+    }
+    .maintain_title .maintain_pic img {
+      width: 85%;
+      vertical-align: top;
+      border-radius: 20px;
+      box-shadow: 5px 5px 5px lightgray;
+    }
+    .subtitle_item .subtitle_text {
+      font-size: 100px;
+      font-family: 'Cinzel Decorative', cursive;
+      text-align: center;
+      color: #684139;
+      position: relative;
+      z-index: 1;
+      transform: translateX(-20%);
+      letter-spacing: 5px;
+  }
+  .maintain_subtitle .subtitle_photo {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+    .subtitle_item .subtitle_pic {
+      width: 100%;
+      position: relative;
+      right: -150px;
+    }
+    .subtitle_item .subtitle_pic img {
+      width: 60%;
+      border-radius: 20px;
+      box-shadow: 5px 5px 5px lightgray;
+  }  
+    .subtitle_item .subtitle_photo img {
+      width: 85%;
+      border-radius: 20px;
+      box-shadow: 5px 5px 5px lightgray;
+  }
+  .maintain_backgroundwrap .maintain_content_title {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    display: block;
+    padding: 50px 0%;
+  }
+  .maintain_content_info .num {
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+    padding-bottom: 50px;
+    height: 40%;
+}
+.maintain_content_info .title {
+  font-size: 16px;
+  font-family: 'Playfair Display', serif;
+  height: 30%;
+  box-sizing: border-box;
+}
+.maintain_content_info .text {
+  font-size: 12px;
+  font-family: 'Playfair Display', serif;
+  height: 30%;
+}
+.footer_wrap{
+  max-width: 1024px;
+}
+.footer_item .brandstory .brandstory_title{
+  font-size: 28px;
+}
+.footer_item .brandstory .brandstory_content{
+  font-size: 14px;
+}
+.footer_aboutus .title{
+  font-size: 28px;
+}
+.footer_aboutus nav li{
+  list-style: none;
+  /* background-color: red; */
+  /* border: 1px solid black; */
+  margin: 5px 0px;
+}
+.footer_aboutus nav li a{
+  font-size: 20px;
+}
+.footer_aboutus nav li a:hover{
+  color: black;
+  transition: 0s;
+}
+.footer_business .business_title{
+  font-size: 28px;
+}
+.footer_business .business_info{
+  font-size: 16px;
+}
+.footer_business .business_content{
+  font-size: 12px;
+}
+.footer_icon .ins,.fb{
+  width: 10%;
+  color: #000000;
+  padding: 10px;
+  font-size: 24px;
+  text-align: center;
+  transition: 0s;
+}
+.footer_icon .ins:hover{
+  color: black;
+  transform: rotate(0deg);
+  transition: 0s;
+}
+.footer_icon .fb:hover{
+  color: black;
+  transform: rotate(0deg);
+  transition: 0s;
+}
+}
