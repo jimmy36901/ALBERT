@@ -256,8 +256,6 @@
   text-align: center;
 }
 /* ----------------RWD--------------- */
-
-
 @media screen and (max-width:768px){
   .bannerwrap{
     width: 100%;
@@ -453,7 +451,7 @@
 }
 .franch{
     background-image: url(../map/Franch_banner.jpg);
-    background-position-x: -250px ;
+    background-position-x: -340px ;
 }
 .taipei{
     background-image: url(../map/Taiwan_banner.jpg);
@@ -582,6 +580,14 @@
   transition: .3s;
   background-color: black;
   color: white;
+}
+.declaration{
+  width: 80%;
+  margin: auto;
+  font-size: 12px;
+  display: block;
+  color: white;
+  text-align: center;
 }
 }
 /* -----------------RWD(1024)----------------- */

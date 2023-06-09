@@ -278,6 +278,7 @@ input.typing{
     text-align: center;
   }
   /* -------------RWD------------- */
+
   @media screen and (max-width:768px){
     .logo_wrap{
       display: flex;
@@ -615,6 +616,14 @@ input.typing{
     transition: .3s;
     background-color: black;
     color: white;
+  }
+  .declaration{
+    width: 80%;
+    margin: auto;
+    font-size: 12px;
+    display: block;
+    color: white;
+    text-align: center;
   }
   }
   /* -----------------RWD(1024)----------------- */

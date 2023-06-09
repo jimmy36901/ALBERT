@@ -721,6 +721,14 @@
     background-color: black;
     color: white;
   }
+  .declaration{
+    width: 80%;
+    margin: auto;
+    font-size: 12px;
+    display: block;
+    color: white;
+    text-align: center;
+  }
   }
   /* -----------------RWD(1024)----------------- */
   @media screen and (min-width:769px) and (max-width:1024px){
