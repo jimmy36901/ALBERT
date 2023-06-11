@@ -465,24 +465,56 @@ section .warning_content{
     background-color: white;
 }
 .product_summary_item .product_summary_pic{
-    width: 100%;
+  width: 100%;
+  border: 5px solid white;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 .product_summary_item .product_summary_pic img{
-    width: 100%;
+  width: 100%;
+  vertical-align: bottom;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: .3s;
+  transform: scale(1);
 }
+.product_summary_item .product_summary_pic img:hover{
+width: 100%;
+vertical-align: bottom;
+cursor: pointer;
+box-sizing: border-box;
+transition: .5s;
+transform: scale(1.2);
+}
+
 .product_summary_item .product_summary_photo{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* background-color: white; */
+  box-sizing: border-box;
+  margin: 5px 0px;
+  
 }
 .product_summary_photo .product_summary_image{
-    width: 33.33%;
-    padding: 2% 1%;
-    box-sizing: border-box;
+  width: 33.333%;
+  margin: 4px;
+  box-sizing: border-box;
+  border: 5px solid white;
+  overflow: hidden;
+  
 }
 .product_summary_photo .product_summary_image img{
-    width: 100%;
-    /* border: 3px solid white; */
+  width: 100%;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: .3s;
+  transform: scale(1);
+  vertical-align: bottom;
+}
+.product_summary_photo .product_summary_image img:hover{
+transition: .3s;
+transform: scale(1.1);
 }
 .product_summary_item h1{
     font-size: 28px;
@@ -688,12 +720,13 @@ section .warning_content{
   border: 1px solid black;
   border-radius: 50%;
   text-align: center;
-  display: none;
+  display: block;
+  z-index: 99999;
 }
 .footer_bannerwrap .topbutton:hover{
-  transition: .3s;
-  background-color: black;
-  color: white;
+  transition: 0s;
+  background-color: transparent;
+  color: initial;
 }
 .declaration{
   width: 80%;
@@ -705,7 +738,7 @@ section .warning_content{
 }
 }
 /* -----------------RWD(1024)----------------- */
-@media screen and (min-width:769px) and (max-width:1024px){
+@media screen and (min-width:769px) and (max-width:1080px){
   .logo_wrap{
     max-width: 1024px;
     /* border: none; */

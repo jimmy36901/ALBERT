@@ -740,12 +740,13 @@
         border: 1px solid black;
         border-radius: 50%;
         text-align: center;
-        display: none;
+        display: block;
+        z-index: 99999;
       }
       .footer_bannerwrap .topbutton:hover{
-        transition: .3s;
-        background-color: black;
-        color: white;
+        transition: 0s;
+        background-color: transparent;
+        color: initial;
       }
       .declaration{
         width: 80%;
@@ -757,7 +758,7 @@
       }
   }
    /* -----------------RWD(1024)----------------- */
-   @media screen and (min-width:769px) and (max-width:1024px){
+   @media screen and (min-width:769px) and (max-width:1080px){
     .logo_wrap{
       max-width: 1024px;
       /* border: none; */
