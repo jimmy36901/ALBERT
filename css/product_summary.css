@@ -20,7 +20,7 @@
 }
 .logo_pic{
     width: 80%;
-    transform:translateX(-50px) ;
+    transform:translateX(0px) ;
     
 }
 .logo_pic img{
@@ -233,7 +233,7 @@ section .warning_content{
   .footer_item .brandstory .brandstory_content{
     font-size: 16px;
     font-family: 'Playfair Display', serif;
-    color: #FFFFFF;
+    color: black;
     text-align: center;
   }
   .footer_aboutus .title{
@@ -351,7 +351,7 @@ section .warning_content{
 .logo_pic{
     width: 80%;
     min-width: 200px;
-    transform:translateX(-50px) ;
+    transform:translateX(0px) ;
     
 }
 .logo_pic img{
@@ -364,7 +364,7 @@ section .warning_content{
   width: 30px;
   height: 25px;
   display: block;
-  position: absolute;
+  position: fixed;
   top: 23px;
   right: 10px;
   transition: .5s ease-in-out;
@@ -638,7 +638,7 @@ section .warning_content{
 .footer_item .brandstory .brandstory_content{
   font-size: 16px;
   font-family: 'Playfair Display', serif;
-  color: #FFFFFF;
+  color: black;
   text-align: left;
 }
 .footer_aboutus .title{

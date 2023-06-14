@@ -10,6 +10,7 @@
     background-size: cover;
     box-sizing: border-box;
     overflow: hidden;
+    position: relative;
 }
 
 .logo_wrap{
@@ -25,7 +26,7 @@
 }
 .logo_pic{
     width: 80%;
-    transform:translateX(-50px) ;
+    transform:translateX(0px) ;
     min-width: 200px;
 }
 .logo_pic img{
@@ -67,6 +68,38 @@
     justify-content: flex-end;
     align-items: flex-end;
 }
+.bannerwrap .slidedown{
+  position: relative;
+  border: none;
+  /* bottom: 0;
+  left: calc(50% - 50px); */
+  top: 180px;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+}
+.bannerwrap .slidedown button{
+  font-size: 40px;
+  font-weight: lighter;
+  background-color: transparent;
+  border: none;
+  animation: jump 1s infinite;
+  color: #B6A286;
+  cursor: pointer;
+}
+
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
 .banner_text{
     width: 25%;
     font-size: 20px;
@@ -399,7 +432,7 @@
   .footer_item .brandstory .brandstory_content{
     font-size: 16px;
     font-family: 'Playfair Display', serif;
-    color: #FFFFFF;
+    color: black;
     text-align: center;
   }
   .footer_aboutus .title{
@@ -511,7 +544,7 @@
   }
   .logo_pic{
       width: 80%;
-      transform:translateX(-40px) ;
+      transform:translateY(20px) ;
       min-width: 200px;
   }
   .logo_pic img{
@@ -524,7 +557,7 @@
     width: 30px;
     height: 25px;
     display: block;
-    position: absolute;
+    position: fixed;
     top: 23px;
     right: 10px;
     transition: .5s ease-in-out;
@@ -544,6 +577,7 @@
     background: #B6A286;;
     transform: rotate(0deg);
     transition: .25s ease-in-out;
+    border:0.05px solid #ececee;
   }
   
   #btn span:nth-child(1) {
@@ -620,6 +654,28 @@
       display: flex;
       justify-content: flex-end;
       align-items: flex-end;
+  }
+  .bannerwrap .slidedown{
+    position: relative;
+    border: none;
+    /* bottom: 0;
+    left: calc(50% - 50px); */
+    top: calc(35vh - 50px);
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+  }
+  .bannerwrap .slidedown button{
+    font-size: 40px;
+    font-weight: lighter;
+    background-color: transparent;
+    border: none;
+    animation: jump 1s infinite;
+    color: #B6A286;
+    cursor: pointer;
   }
   .banner_text{
       width: 50%;
@@ -971,7 +1027,7 @@
   .footer_item .brandstory .brandstory_content{
     font-size: 16px;
     font-family: 'Playfair Display', serif;
-    color: #FFFFFF;
+    color: black;
     text-align: left;
   }
   .footer_aboutus .title{

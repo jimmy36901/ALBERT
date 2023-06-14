@@ -49,9 +49,12 @@
 
             </nav>
         </div>
+        <div class="slidedown">
+            <button id="down_arrow"><i class="fa-solid fa-arrow-down"></i></button>
+        </div>
     </div>
 
-<article class="FAQ_wrap">
+<article class="FAQ_wrap" id="FAQwrap">
         <section class="FAQ_title">
             <h1>FAQ
                 <div class="FAQ_pic"><img src="flowerpic/Contact_FAQ_leaf.png" alt=""></div>
@@ -262,8 +265,36 @@
     });
     });
 </script>
+<script>
+    $(document).ready(function() {
+    var scrolled = false;
+    var topButton = $('.topbutton');
 
+    topButton.hide();
 
+    $(window).scroll(function() {
+        var scrollPosition = $(this).scrollTop();
+
+        if (!scrolled && scrollPosition > 100) {
+        topButton.fadeIn();
+        scrolled = true;
+        } else if (scrollPosition <= 100) {
+        topButton.fadeOut();
+        scrolled = false;
+        }
+    });
+
+    topButton.click(function() {
+        $('html, body').animate({scrollTop: 0}, 800);
+        return false;
+    });
+    });
+</script>
+<script>
+    document.getElementById("down_arrow").addEventListener("click", () => {
+          document.getElementById("FAQwrap").scrollIntoView({ behavior: 'smooth' });
+        });
+</script>
 
 </body>
 </html>

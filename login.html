@@ -160,6 +160,31 @@ $('#btn').click(function(){
     <script>
             AOS.init();
     </script>
+   <script>
+    $(document).ready(function() {
+    var scrolled = false;
+    var topButton = $('.topbutton');
+
+    topButton.hide();
+
+    $(window).scroll(function() {
+        var scrollPosition = $(this).scrollTop();
+
+        if (!scrolled && scrollPosition > 100) {
+        topButton.fadeIn();
+        scrolled = true;
+        } else if (scrollPosition <= 100) {
+        topButton.fadeOut();
+        scrolled = false;
+        }
+    });
+
+    topButton.click(function() {
+        $('html, body').animate({scrollTop: 0}, 800);
+        return false;
+    });
+    });
+</script>
 
 
 

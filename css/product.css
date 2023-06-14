@@ -23,7 +23,7 @@
 }
 .logo_pic{
     width: 80%;
-    transform:translateX(-50px) ;
+    transform:translateX(0px) ;
     
 }
 .logo_pic img{
@@ -97,6 +97,7 @@
     box-shadow: 3px 3px gray;
     transition: .5s;
     cursor: pointer;
+    background-color: #DCD2C3;
 
 }
 .product_list li:hover{
@@ -229,7 +230,7 @@
   .footer_item .brandstory .brandstory_content{
     font-size: 16px;
     font-family: 'Playfair Display', serif;
-    color: #FFFFFF;
+    color: black;
     text-align: center;
   }
   .footer_aboutus .title{
@@ -352,7 +353,7 @@
   .logo_pic{
       width: 80%;
       min-width: 200px;
-      transform:translateX(-50px) ;
+      transform:translateX(0px) ;
       
   }
   .logo_pic img{
@@ -365,11 +366,11 @@
     width: 30px;
     height: 25px;
     display: block;
-    position: absolute;
+    position: fixed;
     top: 23px;
     right: 10px;
     transition: .5s ease-in-out;
-    z-index: 99;
+    z-index: 9999999;
     cursor: pointer;
     border: none;
     background: none;
@@ -417,7 +418,7 @@
       top: 0px;
       transition: right 1s;
       right: -50%;
-      z-index: 9;
+      z-index: 99999;
   }
   #hamburger_menu.open {
       right: 0;
@@ -485,7 +486,6 @@
       z-index: 999;
       position: sticky;
       top: 10px;
-      /* background-color: red; */
   }
   .product_list li{
       list-style: none;
@@ -632,7 +632,7 @@
   .footer_item .brandstory .brandstory_content{
     font-size: 16px;
     font-family: 'Playfair Display', serif;
-    color: #FFFFFF;
+    color: black;
     text-align: left;
   }
   .footer_aboutus .title{
@@ -822,7 +822,7 @@
   .footer_item .brandstory .brandstory_content{
     font-size: 16px;
     font-family: 'Playfair Display', serif;
-    color: #FFFFFF;
+    color: black;
     text-align: center;
   }
   .footer_aboutus .title{

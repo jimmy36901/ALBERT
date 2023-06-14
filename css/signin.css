@@ -20,7 +20,7 @@
 }
 .logo_pic{
     width: 80%;
-    transform:translateX(-50px) ;
+    transform:translateX(0px) ;
     
 }
 .logo_pic img{
@@ -180,7 +180,7 @@ input.typing{
   .footer_item .brandstory .brandstory_content{
     font-size: 16px;
     font-family: 'Playfair Display', serif;
-    color: #FFFFFF;
+    color: black;
     text-align: center;
   }
   .footer_aboutus .title{
@@ -294,7 +294,7 @@ input.typing{
   .logo_pic{
       width: 80%;
       min-width: 200px;
-      transform:translateX(-40px) ;
+      transform:translateX(0px) ;
   }
   .logo_pic img{
       width: 100%;
@@ -306,7 +306,7 @@ input.typing{
     width: 30px;
     height: 25px;
     display: block;
-    position: absolute;
+    position: fixed;
     top: 23px;
     right: 10px;
     transition: .5s ease-in-out;
@@ -528,7 +528,7 @@ input.typing{
   .footer_item .brandstory .brandstory_content{
     font-size: 16px;
     font-family: 'Playfair Display', serif;
-    color: #FFFFFF;
+    color: black;
     text-align: left;
   }
   .footer_aboutus .title{

@@ -24,7 +24,7 @@
 }
 .logo_pic{
     width: 80%;
-    transform:translateX(-50px) ;
+    transform:translateX(0px) ;
     
 }
 .logo_pic img{
@@ -54,6 +54,37 @@
     filter:drop-shadow(1px 1px 1px gray) ;
     transition: .3s ease-in;
  }
+ .bannerwrap .slidedown{
+  position: relative;
+  border: none;
+  /* bottom: 0;
+  left: calc(50% - 50px); */
+  top: calc(68vh);
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+}
+.bannerwrap .slidedown button{
+  font-size: 40px;
+  font-weight: lighter;
+  background-color: transparent;
+  border: none;
+  animation: jump 1s infinite;
+  color: #B6A286;
+  cursor: pointer;
+}
+
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
 .FAQ_wrap{
     width: 100%;
     background-color: #F1EDE5;
@@ -245,7 +276,7 @@
   .footer_item .brandstory .brandstory_content{
     font-size: 16px;
     font-family: 'Playfair Display', serif;
-    color: #FFFFFF;
+    color: black;
     text-align: center;
   }
   .footer_aboutus .title{
@@ -359,7 +390,7 @@
     .logo_pic{
         width: 80%;
         min-width: 200px;
-        transform:translateX(-40px) ;
+        transform:translateX(0px) ;
         
     }
     .logo_pic img{
@@ -373,7 +404,7 @@
       width: 30px;
       height: 25px;
       display: block;
-      position: absolute;
+      position: fixed;
       top: 23px;
       right: 10px;
       transition: .5s ease-in-out;
@@ -658,7 +689,7 @@
       .footer_item .brandstory .brandstory_content{
         font-size: 16px;
         font-family: 'Playfair Display', serif;
-        color: #FFFFFF;
+        color: black;
         text-align: left;
       }
       .footer_aboutus .title{

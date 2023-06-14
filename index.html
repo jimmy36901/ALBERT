@@ -14,6 +14,7 @@
     <link rel="icon" href="flowerpic/icon.ico" type="image/x-icon" >
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>First page</title>
+    
 
 </head>
 <body>
@@ -51,9 +52,12 @@
             <div class="logo_story">
                 <h1 class="banner_text">"Fleur" means "flower" in French. we hope this flower can accompany you on your travels.</h1>
             </div>
+            <div class="slidedown">
+                <button id="down_arrow"><i class="fa-solid fa-arrow-down"></i></button>
+            </div>
     </div>
 
-    <article class="aboutus_wrap">
+    <article class="aboutus_wrap" id="aboutwrap">
         <div class="aboutus_content">
             <section class="aboutus_item prev">
                 <h1>About</h1>
@@ -133,7 +137,7 @@
               <div class="maintain_title">
                   <span>Trea
                   <div class="maintain_pic">
-                      <img src="flowerpic/Rectangle 30.jpg" data-aos="zoom-in" data-aos-duration="2500" alt="">
+                      <img src="flowerpic/Rectangle 30.jpg" data-aos="zoom-in" data-aos-duration="1500" alt="">
                   </div>
                 </span>
               </div>
@@ -141,39 +145,39 @@
             
             <div class="maintain_subtitle">
                 <div class="subtitle_item">
-                    <div class="subtitle_pic"><img src="flowerpic/Rectangle 31.jpg" data-aos="zoom-in" data-aos-duration="2500" alt=""></div>
+                    <div class="subtitle_pic"><img src="flowerpic/Rectangle 31.jpg" data-aos="zoom-in" data-aos-duration="1500" alt=""></div>
                 </div>
                 <div class="subtitle_item photo">
                     <span class="subtitle_text">sure</span>
-                    <div class="subtitle_photo" ><img src="flowerpic/Rectangle 32.jpg" data-aos="zoom-in" data-aos-duration="3000" alt=""></div>
+                    <div class="subtitle_photo" ><img src="flowerpic/Rectangle 32.jpg" data-aos="zoom-in" data-aos-duration="2000" alt=""></div>
                 </div>
             </div>
 
-            <span class="maintain_content_title" data-aos="fade-up" data-aos-duration="2500">Take care of your flower?</span>
+            <span class="maintain_content_title" data-aos="fade-up" data-aos-duration="1500">Take care of your flower?</span>
 
             <div class="maintain_content">
                 <div class="maintain_contetnt_item">
                     <div class="maintain_content_info">
-                        <div class="num" data-aos="fade-up" data-aos-duration="2500">01</div>
-                        <h1 class="title" data-aos="fade-up" data-aos-duration="2500">Keep them away from direct sunlight:</h1>
-                        <p class="text" data-aos="fade-up" data-aos-duration="2500">Direct sunlight can cause dry flowers to fade and lose their color.</p>
+                        <div class="num" data-aos="fade-up" data-aos-duration="1500">01</div>
+                        <h1 class="title" data-aos="fade-up" data-aos-duration="1500">Keep them away from direct sunlight:</h1>
+                        <p class="text" data-aos="fade-up" data-aos-duration="1500">Direct sunlight can cause dry flowers to fade and lose their color.</p>
                     </div>
                     <div class="maintain_content_info">
-                        <div class="num" data-aos="fade-up" data-aos-duration="2500">02</div>
-                        <h1 class="title" data-aos="fade-up" data-aos-duration="2500">Use a sealant:</h1>
-                        <p class="text" data-aos="fade-up" data-aos-duration="2500">You can use a floral spray sealant to protect the dry flowers .</p>
+                        <div class="num" data-aos="fade-up" data-aos-duration="1500">02</div>
+                        <h1 class="title" data-aos="fade-up" data-aos-duration="1500">Use a sealant:</h1>
+                        <p class="text" data-aos="fade-up" data-aos-duration="1500">You can use a floral spray sealant to protect the dry flowers .</p>
                     </div>
                 </div>
                 <div class="maintain_contetnt_item">
                     <div class="maintain_content_info">
-                        <div class="num" data-aos="fade-up" data-aos-duration="2500">03</div>
-                        <h1 class="title" data-aos="fade-up" data-aos-duration="2500">Avoid humidity:</h1>
-                        <p class="text" data-aos="fade-up" data-aos-duration="2500">Avoid placing them near windows or areas with high humidity.</p>
+                        <div class="num" data-aos="fade-up" data-aos-duration="1500">03</div>
+                        <h1 class="title" data-aos="fade-up" data-aos-duration="1500">Avoid humidity:</h1>
+                        <p class="text" data-aos="fade-up" data-aos-duration="1500">Avoid placing them near windows or areas with high humidity.</p>
                     </div>
                     <div class="maintain_content_info">
-                        <div class="num" data-aos="fade-up" data-aos-duration="2500">04</div>
-                        <h1 class="title" data-aos="fade-up" data-aos-duration="2500">Keep them clean:</h1>
-                        <p class="text" data-aos="fade-up" data-aos-duration="2500">Dust can accumulate on dry flowers, so it's important to keep them clean.</p>
+                        <div class="num" data-aos="fade-up" data-aos-duration="1500">04</div>
+                        <h1 class="title" data-aos="fade-up" data-aos-duration="1500">Keep them clean:</h1>
+                        <p class="text" data-aos="fade-up" data-aos-duration="1500">Dust can accumulate on dry flowers, so it's important to keep them clean.</p>
                     </div>
                 </div>
             </div>
@@ -271,14 +275,14 @@
           })
           </script>
 
-          <script>
+          <!-- <script>
             function scrollToTop(){
                 window.scrollTo({
                     top:0,
                     behavior:"smooth"
                 })
             }
-          </script>
+          </script> -->
 
 <script type="text/javascript">
    function onOff() {
@@ -303,6 +307,38 @@
             $(this).toggleClass('open');
         });
         });
-  </script>
+</script>
+<script>
+        $(document).ready(function() {
+        var scrolled = false;
+        var topButton = $('.topbutton');
+
+        topButton.hide();
+
+        $(window).scroll(function() {
+            var scrollPosition = $(this).scrollTop();
+
+            if (!scrolled && scrollPosition > 100) {
+            topButton.fadeIn();
+            scrolled = true;
+            } else if (scrollPosition <= 100) {
+            topButton.fadeOut();
+            scrolled = false;
+            }
+        });
+
+        topButton.click(function() {
+            $('html, body').animate({scrollTop: 0}, 800);
+            return false;
+        });
+        });
+</script>
+<script>
+    document.getElementById("down_arrow").addEventListener("click", () => {
+          document.getElementById("aboutwrap").scrollIntoView({ behavior: 'smooth' });
+        });
+</script>
+
+  
 </body>
 </html>
