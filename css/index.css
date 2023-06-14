@@ -543,9 +543,9 @@
       
   }
   .logo_pic{
-      width: 80%;
-      transform:translateY(20px) ;
-      min-width: 200px;
+      width: 30%;
+      transform:translateY(5px) ;
+      min-width: 175px;
   }
   .logo_pic img{
       width: 100%;
@@ -558,7 +558,7 @@
     height: 25px;
     display: block;
     position: fixed;
-    top: 23px;
+    top: calc(8vh - 32px);
     right: 10px;
     transition: .5s ease-in-out;
     z-index: 99;

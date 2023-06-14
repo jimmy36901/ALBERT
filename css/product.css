@@ -351,9 +351,9 @@
       border-bottom: none;
   }
   .logo_pic{
-      width: 80%;
-      min-width: 200px;
-      transform:translateX(0px) ;
+      width: 40%;
+      min-width: 175px;
+      transform:translateY(0px) ;
       
   }
   .logo_pic img{
@@ -367,7 +367,7 @@
     height: 25px;
     display: block;
     position: fixed;
-    top: 23px;
+    top: calc(8vh - 17px);
     right: 10px;
     transition: .5s ease-in-out;
     z-index: 9999999;
